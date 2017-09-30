@@ -6,4 +6,4 @@ Power by Tesseract
 [live][Converter]
 
 [Converter]:
-https://zidianlyu.github.io/Converter-Demo/
+https://zidianlyu.github.io/ImgToTxt/
