@@ -47,16 +47,13 @@ function progressUpdate(packet) {
             pre.appendChild(document.createTextNode(packet.data.text))
             line.innerHTML = ''
             line.appendChild(pre)
-
         }
-
         log.insertBefore(line, log.firstChild)
     }
 }
 
 function recognizeFile(file) {
     document.querySelector("#log").innerHTML = ''
-
     Tesseract.recognize(file, {lang: document.querySelector('#langsel').value}).progress(function(packet) {
         console.info(packet)
         progressUpdate(packet)

@@ -3,21 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Audio</title>
-    <!-- <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet"> -->
-
-    <!-- If you'd like to support IE8 -->
-    <!-- <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+    <title>ImgToTxt</title>
+    <link rel="stylesheet" href="convert.css">
 </head>
 
 <body>
-    <h4>Hello world</h4>
-    <!-- <label for="fileInput">Choose File to OCR:</label>
-    <input type="file" id="fileInput" name="fileInput" />
-    <br />
-    <br />
-    <div id="document-content">
-    </div> -->
+    <h4>Image to text converter</h4>
     <select id="langsel" onchange="window.lastFile && recognizeFile(window.lastFile)">
     <option value='afr'     > Afrikaans             </option>
     <option value='ara'     > Arabic                </option>
@@ -87,55 +78,10 @@
     <option value='vie'     > Vietnamese            </option>
     </select>
 
-    <!-- <button onclick="recognizeFile('../node/cosmic.png')">Sample Image</button> -->
     <input type="file" onchange="recognizeFile(window.lastFile=this.files[0])">
 
     <div id="log"></div>
 
-
-    <style>
-        #log>div {
-            color: #313131;
-            border-top: 1px solid #dadada;
-            padding: 9px;
-            display: flex;
-        }
-
-        #log>div:first-child {
-            border: 0;
-        }
-
-
-        .status {
-            min-width: 250px;
-        }
-
-        #log {
-            border: 1px solid #dadada;
-            padding: 10px;
-            margin-top: 20px;
-            min-height: 100px;
-        }
-
-        body {
-            font-family: sans-serif;
-            margin: 30px;
-        }
-
-        progress {
-            display: block;
-            width: 100%;
-            transition: opacity 0.5s linear;
-        }
-
-        progress[value="1"] {
-            opacity: 0.5;
-        }
-    </style>
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
-    <!-- <script src="responsivevoice.js" charset="utf-8"></script> -->
-    <!-- <script src="audio.js" charset="utf-8"></script> -->
-    <!-- <script type="text/javascript" src="ocrad.js"></script> -->
     <script src='https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.js'></script>
     <script type="text/javascript" src="convert.js"></script>
 </body>

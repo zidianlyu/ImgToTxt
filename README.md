@@ -1,7 +1,8 @@
 ## Converter
 
-This is an functional online game for brain-storming purpose built in jQuery.
+This is an functional online tool that allows user to convert image to text
 
+Power by Tesseract
 [live][Converter]
 
 [Converter]:
