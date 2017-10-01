@@ -1,0 +1,26 @@
+@import url("convert.css");
+
+
+.project-container{
+    margin: 40px auto 0;
+    width: 570px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.input-header {
+    font-weight: 200;
+    text-align: center;
+}
+
+.input-group {
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#input-file, select{
+    width: 45%;
+    cursor: pointer;
+    padding: 0;
+}
